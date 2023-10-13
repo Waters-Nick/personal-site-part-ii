@@ -16,7 +16,7 @@ body {
   ". homepage-img homepage-img homepage-img ."
   "homepage-quote homepage-quote homepage-quote homepage-quote homepage-quote"
   "footer footer footer footer footer";
-  font-size: calc(16px + 0.5vw);
+  /* font-size: calc(16px + 0.5vw); */
   background-color: whitesmoke;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
