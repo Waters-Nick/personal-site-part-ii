@@ -4,12 +4,14 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* height: 300vh; */
 }
 
 /* Start NW CSS */
 
-body {
+#body-home {
+  box-sizing: border-box;
   display: grid;
   grid-area: 
   "nav nav nav nav nav"
@@ -18,7 +20,6 @@ body {
   "footer footer footer footer footer";
   /* font-size: calc(16px + 0.5vw); */
   background-color: whitesmoke;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Navigation Bar - Static */
