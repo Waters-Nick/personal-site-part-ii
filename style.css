@@ -4,7 +4,7 @@ body {
   padding: 0;
   width: 100vw;
   min-height: 100vh;
-  height: 300vh;
+  /* height: 300vh; */
 }
 
 /* Start NW CSS */
@@ -65,6 +65,12 @@ a:hover {
 }
 
 /* Homepage body */
+#homepage-main {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid blue;
+}
+
 #homepage-img {
   grid-area: homepage-img;
   width: 100%;
@@ -73,14 +79,18 @@ a:hover {
 }
 
 #homepage-laptop {
-  height: 200px;
-  width: 500px;
+  max-width: 60%;
+  height: auto;
   margin: auto;
 }
 
-
 #homepage-quote {
   grid-area: homepage-quote;
+  margin: auto;
+  font-size: calc(42px + 0.5vw);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0,59,0); 
+  
 }
 
 /* Footer - static */
@@ -92,7 +102,7 @@ Footer {
   position: absolute;
   bottom:0;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 1fr / 100%;
 }
 
 #copyright-text {
