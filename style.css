@@ -98,13 +98,55 @@ a:hover {
 
 /* About Page Body */
  #about-body {
-  width: 80vw;
+  box-sizing: border-box;
   display: grid;
-  grid-area: 1fr 4fr 4fr 1fr / 1fr 4fr 4fr 1fr;
+  /* font-size: calc(16px + 0.5vw); */
+  background-color: whitesmoke;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 100vw;
+ }
+
+ #about-main {
+  display: grid;
+  grid-template-columns: 10vw 40vw 40vw 10vw;
+  grid-template-rows: 10% 40% 40% 10%;
+  grid-template-areas: 
+    ". . . ."
+    ". about-1 about-2 ."
+    ". about-3 about-4 ."
+    ". . . .";
+  grid-gap: 1em;
  }
 
  .about-box {
-  background-color: red;
+  border: 1px solid black;
+  box-shadow: .25em .25em rgba(71, 70, 70, 0.486);
+  height: 100%;
+  width: 100%;
+  background-color: aliceblue;
+ }
+
+ .about-text {
+  margin: 0.5rem;
+ }
+ #about-box-1 {
+  grid-area: about-1;
+
+ }
+
+ #about-box-2 {
+  grid-area: about-2;
+
+ }
+
+ #about-box-3 {
+  grid-area: about-3;
+
+ }
+
+ #about-box-4 {
+  grid-area: about-4;
+
  }
 
 /* Footer - static */
