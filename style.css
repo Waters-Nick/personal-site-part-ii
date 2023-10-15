@@ -66,6 +66,7 @@ a:hover {
 }
 
 /* Homepage body */
+
 #homepage-main {
   display: flex;
   flex-direction: column;
@@ -97,7 +98,7 @@ a:hover {
 }
 
 /* About Page Body */
- main {
+ #about-body {
   width: 80vw;
   display: grid;
   grid-area: 10% 40% 40% 10% / 10% 40% 40% 10%;
