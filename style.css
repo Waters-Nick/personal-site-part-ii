@@ -96,6 +96,17 @@ a:hover {
   
 }
 
+/* About Page Body */
+ main {
+  width: 80vw;
+  display: grid;
+  grid-area: 10% 40% 40% 10% / 10% 40% 40% 10%;
+ }
+
+ .about-box {
+  background-color: red;
+ }
+
 /* Footer - static */
 Footer {
   grid-area: footer;
@@ -105,28 +116,32 @@ Footer {
   position: absolute;
   bottom:0;
   display: grid;
-  grid-template-columns: 3fr 1fr / 100%;
+  grid-template-columns: 1fr 2fr 1fr;
 }
 
-#copyright-text {
-  width: 100vw;
+#copyright {
+  grid-column-start: 2;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+#copyright-text {
   color: white;
 }
 
 #sm-links {
-  display:flex;
-  justify-content: flex-end;
+  grid-column-start: 3;
+  display: flex;
   align-content: center;
-  width: 30%;
-  height: 30%;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
 
 .social-img {
-  height:50%;
-  justify-content: center;
-  align-content: baseline;
-  
+  height: calc(3rem - 0.5vw);
+  margin-right: 1rem;
+  /* height: 3rem; */
+
 }
