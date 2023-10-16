@@ -2,7 +2,7 @@
 This website is a redesign of the website created in the part I project (block09). 
 
 ## Description
-
+This redesigned website utilizes flex and grid to better layout the site as well as implementing responsive design for users viewing on different sized screens and mobile devices.
 ## Author
 Nicholas Waters
 
