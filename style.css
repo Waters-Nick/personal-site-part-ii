@@ -228,7 +228,7 @@ textarea {
   display: flex;
   flex-direction: column;
   margin-left: 2em;
-
+  position: static;
 }
 
 /* FOOTER */
@@ -272,7 +272,7 @@ Footer {
 @media screen and (max-width: 480px) {
   #body-home, #about-main, #form-submission-page, #contact-body, #portfolio-body {
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 7rem 100% 7rem;
     min-height: auto;
     margin: 0% 2%;
   }
@@ -281,21 +281,28 @@ Footer {
 
   #nav-bar {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    overflow: hidden;
   }
 
   #page-links {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+
   }
+
+  #name {
+    width: 100%;
+  }
+
 /* MAIN CONTENT - HOME - MOBILE */
+  
   #homepage-main {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    grid-row: 3 / 4;
   }
 
   #homepage-laptop {
@@ -303,7 +310,14 @@ Footer {
     margin-top: 2%;
   }
 
+/* CONTACT PAGE - MOBILE */
 
+  #contact-main {
+    grid-row: 2 / 3;
+    grid-template-columns: 5px 1fr 5px;
+    grid-template-rows: 5px 1fr 5px;
+    font-size: 16px;
+  }
 
   /* FOOTER - MOBILE */
 
@@ -311,6 +325,10 @@ Footer {
     display: flex;
     flex-direction: column;
     height:fit-content;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
   }
 
   #sm-links {
