@@ -103,14 +103,14 @@ a:hover {
   display: grid;
   /* font-size: calc(16px + 0.5vw); */
   background-color: whitesmoke;
-  grid-template-rows: 10vh 80vh 10vh;
-  grid-template-columns: 100vw;
+  grid-template-rows: 4rem 1fr 4rem;
+  grid-template-columns: 100%;
  }
 
  #about-main {
   display: grid;
-  grid-template-columns: 10vw 40vw 40vw 10vw;
-  grid-template-rows: 10% 40% 40% 10%;
+  grid-template-columns: 10% 1fr 1fr 10%;
+  grid-template-rows: 1rem 1fr 1fr 1rem;
   grid-template-areas: 
     ". . . ."
     ". about-1 about-2 ."
@@ -125,6 +125,7 @@ a:hover {
   height: 100%;
   width: 100%;
   background-color: aliceblue;
+  height: 100%;
  }
 
  .about-text {
@@ -272,8 +273,7 @@ Footer {
 @media screen and (max-width: 480px) {
   #body-home, #about-main, #form-submission-page, #contact-body, #portfolio-body {
     display: grid;
-    grid-template-rows: 7rem 100% 7rem;
-    min-height: auto;
+    grid-template-rows: 7rem 1fr 7rem;
     margin: 0% 2%;
   }
   
@@ -302,12 +302,19 @@ Footer {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
   }
 
   #homepage-laptop {
     width: 95%;
     margin-top: 2%;
+  }
+
+/* ABOUT PAGE - MOBILE */
+  #about-main {
+    display: flex;
+    flex-direction: column;
+    grid-template-rows: 2 / 3;
   }
 
 /* CONTACT PAGE - MOBILE */
