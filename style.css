@@ -53,7 +53,7 @@ body {
   margin-right: 2rem;
 }
 
-a:visited, a:link {
+.nav-link > a:visited, a:link {
   color:white;
   text-decoration: none;
 }
@@ -201,6 +201,7 @@ textarea {
   width: 100%;
   height: 6em;
   border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #submit-btn {
@@ -210,6 +211,23 @@ textarea {
   color: white;
   border-radius: 20px;
   height: 3em;
+}
+
+/* FORM SUBMISSION PAGE */
+#form-submission-page {
+  box-sizing: border-box;
+  display: grid;
+  background-color: whitesmoke;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-columns: 10% 80% 10%;
+}
+
+#form-submission-body {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  margin-left: 2em;
+
 }
 
 /* FOOTER */
