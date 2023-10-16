@@ -97,6 +97,7 @@ a:hover {
 }
 
 /* ABOUT PAGE - BODY */
+
  #about-body {
   box-sizing: border-box;
   display: grid;
@@ -264,5 +265,37 @@ Footer {
   height: calc(2rem + 0.25vw);
   margin-right: 1rem;
   /* height: 3rem; */
+}
 
+/* MOBILE VIEW */
+
+@media screen and (max-width: 480px) {
+  #nav-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  #page-links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* FOOTER - MOBILE */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height:fit-content;
+  }
+
+  #sm-links {
+    display:flex;
+    flex-direction: column;
+  }
+
+  #sm-links > span {
+    margin-bottom: 1rem;
+  }
 }
