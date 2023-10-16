@@ -81,8 +81,8 @@ a:hover {
 }
 
 #homepage-laptop {
-  height: 40vh;
-  width: fit-content;
+  height:auto;
+  width: 60%;
 }
 
 #homepage-quote {
@@ -270,6 +270,15 @@ Footer {
 /* MOBILE VIEW */
 
 @media screen and (max-width: 480px) {
+  #body-home, #about-main, #form-submission-page, #contact-body, #portfolio-body {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+    min-height: auto;
+    margin: 0% 2%;
+  }
+  
+  /* NAV BAR - MOBILE */
+
   #nav-bar {
     display: flex;
     flex-direction: column;
@@ -281,6 +290,20 @@ Footer {
     display: flex;
     flex-direction: column;
   }
+/* MAIN CONTENT - HOME - MOBILE */
+  #homepage-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #homepage-laptop {
+    width: 95%;
+    margin-top: 2%;
+  }
+
+
 
   /* FOOTER - MOBILE */
 
