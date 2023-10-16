@@ -12,3 +12,4 @@ Nicholas Waters
 - 0.2
     - Implementation of grid and flex to restructure full website
     - Implementation of responsive design in nav bar
+    - Added Contact Page with basic intake form and landing page following form submission
